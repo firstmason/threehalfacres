@@ -1,0 +1,56 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Use the web-embedded monospace font (Roboto Mono) and fall back to system monospace */
+html, body {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* User-requested exact white background */
+  background-color: #ffffff;
+  /* Use Fira Code (loaded from Google Fonts) with monospace fallbacks */
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* force all text to lowercase for visual presentation */
+  text-transform: lowercase;
+}
+
+.container {
+  text-align: center;
+}
+
+.center-image {
+  width: 600px; /* Adjust size as needed */
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+.email {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.tagline {
+  margin-top: 8px;
+  font-size: 1em;
+  color: #222;
+  opacity: 0.9;
+}
+
+/* Make sure all text elements inherit the monospace font */
+/* Ensure all elements inherit the body font and lowercase transform */
+body, body * {
+  font-family: inherit;
+  text-transform: inherit;
+}
